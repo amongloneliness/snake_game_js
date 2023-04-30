@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chooseWrapper">
+        <div class="choose">
+            <h1 class="choose__title">Выбери размер поля</h1>
+            <div class="choose__options">
+                <div class="choose__optionWrapper">
+                    <div onclick="choose_level(1)" class="choose__option chosen choose_16x16">16 x 16</div>
+                </div>
+
+                <div class="choose__optionWrapper">
+                    <div onclick="choose_level(2)" class="choose__option choose_32x32">32 x 32</div>
+                </div>
+
+                <div class="choose__optionWrapper">
+                    <div onclick="choose_level(3)" class="choose__option choose_64x64">64 x 64</div>
+                </div>
+            </div>
+            
+            <div class="choose__play_btnWrapper">
+                <button class="choose__play_btn">играть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/choose_level.js"></script>
+</body>
+</html>
