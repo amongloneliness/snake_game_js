@@ -12,7 +12,18 @@ function create_player() {
     return;
 }
 
+let state = 'none'
+
 function print_player() {
+    if (state == 'left')
+        player_y--;
+    else if (state == 'right')
+        player_y++;
+    else if (state == 'up')
+        player_x--;
+    else if (state == 'down')
+        player_x++;
+
 
     let all_squares = document.body.getElementsByClassName('square');
 
@@ -29,13 +40,11 @@ function print_player() {
 
 document.addEventListener('keydown', function(event) {
     if (event.code == 'ArrowUp')
-        player_x--;
+        state = 'up';
     else if (event.code == 'ArrowDown')
-        player_x++;
+        state = 'down';
     else if (event.code == 'ArrowLeft')
-        player_y--;
+        state = 'left';
     else if (event.code == 'ArrowRight')
-        player_y++;
-    
-    print_player();
+        state = 'right';
   });

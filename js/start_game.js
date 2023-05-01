@@ -16,5 +16,7 @@ function start_game() {
 
     print_ground(level * squares);
 
+    setInterval(print_player, 50);
+
     return;
 }
