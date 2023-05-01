@@ -5,6 +5,12 @@ body {
   height: 100vh;
   background: linear-gradient(black, #000009); }
 
+.hidden {
+  opacity: 0; }
+
+.d-none {
+  display: none !important; }
+
 @font-face {
   font-family: Jost-Medium;
   src: url("../files/fonts/Jost-Medium.ttf");
@@ -28,7 +34,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: .3s; }
   .choose__title {
     text-align: center;
     color: #e4e4e4; }
@@ -89,5 +96,49 @@ body {
       width: 20vw; }
       .choose__option:hover {
         width: 25vw; } }
+.game {
+  display: flex;
+  max-width: 1024px;
+  width: calc(min(80vw, 80vh));
+  height: calc(min(80vw, 80vh)); }
+  .gameWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+  .game__ground {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(min(80vw, 80vh));
+    height: calc(min(80vw, 80vh)); }
+    .game__groundWrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%; }
+
+.line {
+  display: flex;
+  flex-direction: row; }
+
+.square {
+  border: solid 2px rgba(240, 255, 255, 0.464);
+  border-radius: 30%;
+  margin: 1px;
+  transition: .4s; }
+
+.snake {
+  background-color: #02ae69; }
+
+#canvas {
+  width: 100%;
+  position: absolute;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

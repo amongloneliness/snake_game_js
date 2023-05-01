@@ -1,0 +1,63 @@
+.game
+{
+    display: flex;
+    max-width: 1024px;
+    width: calc(min(80vw, 80vh));
+    height: calc(min(80vw, 80vh));
+
+    &Wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__ground
+    {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(min(80vw, 80vh));
+        height: calc(min(80vw, 80vh));
+
+        &Wrapper
+        {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.line
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.square
+{
+    border: solid 2px rgba(240, 255, 255, 0.464);
+    border-radius: 30%;
+    margin: 1px;
+    transition: .4s;
+}
+
+.snake
+{
+    background-color: rgb(2, 174, 105);
+}
+
+#canvas
+{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
