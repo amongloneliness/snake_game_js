@@ -128,16 +128,19 @@ body {
   flex-direction: row; }
 
 .square {
-  border: solid 2px rgba(240, 255, 255, 0.464);
+  background-color: #141414;
+  border: solid 2px rgba(240, 255, 255, 0.197);
   border-radius: 30%;
-  margin: 1px; }
+  margin: 2px;
+  transition: .4s; }
+
+.transition-none {
+  transition: 0s; }
 
 .snake {
-  background-color: #02ae69; }
+  background-color: #02c074; }
 
-#canvas {
-  width: 100%;
-  position: absolute;
-  height: 100%; }
+.snake_dead {
+  background-color: #ae0000; }
 
 /*# sourceMappingURL=style.css.map */

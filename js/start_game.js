@@ -1,5 +1,6 @@
 'use strict'
 
+
 let squares = 16;
 
 function start_game() {
@@ -14,9 +15,10 @@ function start_game() {
         gameWrapper[0].classList.toggle('hidden');
     });
 
-    print_ground(level * squares);
+    create_ground(level * squares);
+    create_player();
 
-    setInterval(print_player, 50);
+    setInterval(update, 60);
 
     return;
 }

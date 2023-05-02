@@ -44,20 +44,24 @@
 
 .square
 {
-    border: solid 2px rgba(240, 255, 255, 0.464);
+    background-color: rgb(20, 20, 20);
+    border: solid 2px rgba(240, 255, 255, 0.197);
     border-radius: 30%;
-    margin: 1px;
-    // transition: .4s;
+    margin: 2px;
+    transition: .4s;
+}
+
+.transition-none
+{
+    transition: 0s;
 }
 
 .snake
 {
-    background-color: rgb(2, 174, 105);
+    background-color: rgb(2, 192, 116);
 }
 
-#canvas
+.snake_dead
 {
-    width: 100%;
-    position: absolute;
-    height: 100%;
+    background-color: rgb(174, 0, 0);
 }
