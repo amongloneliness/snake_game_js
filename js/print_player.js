@@ -2,7 +2,8 @@
 
 
 function print_player() {
-    move_player();
+    if (!move_player())
+        return false;
 
     let all_squares = document.body.getElementsByClassName('square');
 

@@ -25,9 +25,8 @@ function create_ground(sz)
     }
 
     for (let i = 0; i < sz * sz; i++) {
-        sleep(100 + 4 * Math.floor(Math.random() * (256 - i) + i)).then(() => {
+        sleep(100 + 2 * Math.floor(Math.random() * (256 - i) + i)).then(() => {
             document.body.getElementsByClassName('square')[i].classList.toggle('hidden');
-            document.body.getElementsByClassName('square')[i].classList.toggle('transition-none');
         });
     }
 

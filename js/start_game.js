@@ -17,8 +17,16 @@ function start_game() {
 
     create_ground(level * squares);
     create_player();
+    create_food();
 
-    setInterval(update, 60);
+    setInterval(update, 70);
+
+    document.addEventListener('keydown', function(event) {
+        state = (event.code == 'ArrowUp' && state != 'down') ? 'up' :
+            (event.code == 'ArrowDown' && state != 'up') ? 'down' :
+            (event.code == 'ArrowLeft' && state != 'right') ? 'left' :
+            (event.code == 'ArrowRight' && state != 'left') ? 'right' : state;
+    });
 
     return;
 }

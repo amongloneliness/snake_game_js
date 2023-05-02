@@ -129,16 +129,15 @@ body {
 
 .square {
   background-color: #141414;
-  border: solid 2px rgba(240, 255, 255, 0.197);
+  border: solid 2px rgba(240, 255, 255, 0);
   border-radius: 30%;
-  margin: 2px;
-  transition: .4s; }
+  margin: 2px; }
 
-.transition-none {
-  transition: 0s; }
+.food {
+  background-color: #e2e062; }
 
 .snake {
-  background-color: #02c074; }
+  background-color: #00b76e; }
 
 .snake_dead {
   background-color: #ae0000; }

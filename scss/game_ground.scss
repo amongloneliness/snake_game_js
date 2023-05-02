@@ -45,20 +45,19 @@
 .square
 {
     background-color: rgb(20, 20, 20);
-    border: solid 2px rgba(240, 255, 255, 0.197);
+    border: solid 2px rgba(240, 255, 255, 0);
     border-radius: 30%;
     margin: 2px;
-    transition: .4s;
 }
 
-.transition-none
+.food
 {
-    transition: 0s;
+    background-color: rgb(226, 224, 98);
 }
 
 .snake
 {
-    background-color: rgb(2, 192, 116);
+    background-color: rgb(0, 183, 110);
 }
 
 .snake_dead
