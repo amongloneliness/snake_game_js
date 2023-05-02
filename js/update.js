@@ -1,10 +1,13 @@
 'use strict'
 
 function update() {
-    print_ground();
-    print_food();
+    if (player_status) {
+        print_ground();
+        print_food();
+        print_player();
 
-    if (!print_player())
+        document.body.getElementsByClassName('score')[0].textContent = score;
+    }
 
     return;
 }

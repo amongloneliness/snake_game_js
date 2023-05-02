@@ -1,0 +1,22 @@
+.score
+{
+    text-align: center;
+    color: rgba(240, 255, 255, 0.685);
+    font-family: Jost-Medium;
+
+    &Wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 120%;
+        border-radius: 15px;
+        background-color: rgb(20, 20, 20);
+        border: 3px solid rgba(240, 255, 255, 0.685);
+        opacity: .7;
+    }
+}

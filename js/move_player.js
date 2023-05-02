@@ -1,12 +1,5 @@
 'use strict'
 
-function check_collision(x, y) {
-    for (let i = 0; i < snake.length; i++)
-        if (x == snake[i].x && y == snake[i].y)
-            return true;
-
-    return false;
-}
 
 function move_player() {
     let add_x = (state == 'left') ? -1 : (state == 'right') ? 1 : 0; 
@@ -18,17 +11,19 @@ function move_player() {
         (check_collision(x, y) && (add_x != 0 || add_y != 0))
     ) {
         dead_player();
+        player_status = false;
         
-        return false;
+        return;
     }
 
     snake.push(new Point(x, y));
 
     if ((x == food.x && y == food.y)) {
+        score += 10;
         create_food();
     } else {
         snake.shift();
     }
 
-    return true;
+    return;
 }

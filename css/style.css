@@ -102,6 +102,7 @@ body {
   width: calc(min(80vw, 80vh));
   height: calc(min(80vw, 80vh)); }
   .gameWrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,5 +142,23 @@ body {
 
 .snake_dead {
   background-color: #ae0000; }
+
+.score {
+  text-align: center;
+  color: rgba(240, 255, 255, 0.685);
+  font-family: Jost-Medium; }
+  .scoreWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 120%;
+    border-radius: 15px;
+    background-color: #141414;
+    border: 3px solid rgba(240, 255, 255, 0.685);
+    opacity: .7; }
 
 /*# sourceMappingURL=style.css.map */
