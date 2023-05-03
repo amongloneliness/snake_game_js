@@ -146,8 +146,10 @@ body {
 .score {
   text-align: center;
   color: rgba(240, 255, 255, 0.685);
-  font-family: Jost-Medium; }
+  font-family: Jost-Medium;
+  font-size: 120%; }
   .scoreWrapper {
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,10 +157,52 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 120%;
     border-radius: 15px;
     background-color: #141414;
     border: 3px solid rgba(240, 255, 255, 0.685);
     opacity: .7; }
+
+@media (max-width: 600px) {
+  .score {
+    font-size: 2.7vw; } }
+.replay {
+  user-select: none;
+  font-family: Jost-Medium;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .replayWrapper {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.576); }
+  .replay__title {
+    text-align: center;
+    color: #e4e4e4; }
+  .replay__play_btn {
+    width: 80%;
+    height: 50px;
+    background-color: #0c0c0c;
+    border: 3px solid #00603a;
+    border-radius: 15px;
+    font-size: 110%;
+    font-family: Jost-Medium;
+    color: #019f60;
+    transition: .1s; }
+    .replay__play_btnWrapper {
+      display: flex;
+      justify-content: center; }
+    .replay__play_btn:hover {
+      border-color: #00955a;
+      color: #04d07e; }
 
 /*# sourceMappingURL=style.css.map */

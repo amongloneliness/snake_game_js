@@ -1,8 +1,10 @@
 'use strict'
 
-let food = new Point(0, 0);
+let food;
 
 function create_food() {
+    food = new Point(0, 0);
+    
     food.x = Math.floor(Math.random() * squares);
     food.y = Math.floor(Math.random() * squares);
 

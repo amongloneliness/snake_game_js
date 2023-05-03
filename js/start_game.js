@@ -2,6 +2,7 @@
 
 
 let squares = 16;
+let game_interval;
 
 function start_game() {
     let chooseWrapper = document.body.getElementsByClassName('chooseWrapper');
@@ -19,7 +20,7 @@ function start_game() {
     create_player();
     create_food();
 
-    setInterval(update, 70);
+    game_interval = setInterval(update, 70);
 
     document.addEventListener('keydown', function(event) {
         state = (event.code == 'ArrowUp' && state != 'down') ? 'up' :

@@ -8,6 +8,7 @@ function print_ground() {
         for (let j = 0; j < squares; j++) {
             all_squares[i + j * squares].classList.remove('snake');
             all_squares[i + j * squares].classList.remove('food');
+            all_squares[i + j * squares].classList.remove('snake_dead');
         }
     }
 

@@ -7,6 +7,17 @@ function update() {
         print_player();
 
         document.body.getElementsByClassName('score')[0].textContent = score;
+    } else {
+        clearInterval(game_interval);
+        
+        let replayWrapper = document.body.getElementsByClassName('replayWrapper');
+
+        replayWrapper[0].classList.toggle('d-none');
+
+        sleep(300).then(() => { 
+            replayWrapper[0].classList.toggle('hidden');
+        });
+        
     }
 
     return;
