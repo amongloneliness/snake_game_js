@@ -19,7 +19,7 @@ function move_player() {
     snake.push(new Point(x, y));
 
     if ((x == food.x && y == food.y)) {
-        score += 10;
+        score += 1;
         create_food();
     } else {
         snake.shift();
