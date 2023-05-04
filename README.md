@@ -1,2 +1,8 @@
-# snake_game_js
-The "Snake" repository is a game created using JavaScript, HTML and CSS.
+Проект "Игра Змейка"
+================
+
+Проект содержит web версию игры змейка в браузере.
+
+Дополнительные файлы: 
+----------------
+> scss.sh - bash скрипт для редактирования scss файлов.
