@@ -1,5 +1,6 @@
 'use strict'
 
+
 function print_food() {
     let all_squares = document.body.getElementsByClassName('square');
 

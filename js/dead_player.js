@@ -1,5 +1,6 @@
 'use strict'
 
+
 function dead_player() {
     let all_squares = document.body.getElementsByClassName('square');
 

@@ -6,10 +6,11 @@ let game_interval;
 let is_game_started = false;
 
 function start_game() {
-    if (is_game_started)
+    if (is_game_started) {
         return;
-    else
+    } else {
         is_game_started = true;
+    }
 
     let chooseWrapper = document.body.getElementsByClassName('chooseWrapper');
     let gameWrapper = document.body.getElementsByClassName('gameWrapper');

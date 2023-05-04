@@ -1,5 +1,6 @@
 'use strict'
 
+
 function move_player() {
     let add_x = (state == 'left') ? -1 : (state == 'right') ? 1 : 0; 
     let add_y = (state == 'up')   ? -1 : (state == 'down')  ? 1 : 0;

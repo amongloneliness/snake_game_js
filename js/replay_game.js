@@ -1,13 +1,15 @@
 'use strict'
 
+
 let is_game_replay = false;
 
 function replay_game() {
-    if (is_game_replay)
+    if (is_game_replay) {
         return;
-    else
+    } else {
         is_game_replay = true;
-
+    }
+        
     let replayWrapper = document.body.getElementsByClassName('replayWrapper');
 
     replayWrapper[0].classList.toggle('hidden');

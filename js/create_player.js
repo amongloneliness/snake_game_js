@@ -8,6 +8,7 @@ class Point {
     }
 };
 
+// default properties
 let state;
 let snake;
 let player_status;
