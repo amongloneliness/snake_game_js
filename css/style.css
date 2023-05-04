@@ -155,7 +155,7 @@ body {
     align-items: center;
     padding: 10px 50px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 40px;
     border-radius: 15px;
     background-color: #141414;
@@ -176,7 +176,7 @@ body {
     align-items: center;
     padding: 10px 25px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 40px;
     border-radius: 15px;
     background-color: #141414;
