@@ -1,9 +1,23 @@
 'use strict'
 
-
 function move_player() {
     let add_x = (state == 'left') ? -1 : (state == 'right') ? 1 : 0; 
     let add_y = (state == 'up')   ? -1 : (state == 'down')  ? 1 : 0;
+
+    if (snake.length > 1) {
+        if ((state == 'left' && snake[snake.length - 1].x - 1 == snake[snake.length - 2].x && snake[snake.length - 1].y == snake[snake.length - 2].y) ||
+            (state == 'right' && snake[snake.length - 1].x + 1 == snake[snake.length - 2].x && snake[snake.length - 1].y == snake[snake.length - 2].y)
+        ) {
+            add_x = -add_x;
+        }
+
+        if ((state == 'up' && snake[snake.length - 1].x == snake[snake.length - 2].x && snake[snake.length - 1].y - 1 == snake[snake.length - 2].y) ||
+            (state == 'down' && snake[snake.length - 1].x == snake[snake.length - 2].x && snake[snake.length - 1].y + 1 == snake[snake.length - 2].y)
+        ) {
+            add_y = -add_y;
+        }
+    }
+
     let x = snake[snake.length - 1].x + add_x;
     let y = snake[snake.length - 1].y + add_y;
 
