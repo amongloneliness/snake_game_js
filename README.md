@@ -1,4 +1,4 @@
-Project "Game Snake"
+Project "Snake Game"
 ================
 
 The project contains a web version of the snake game in the browser.
