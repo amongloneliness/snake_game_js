@@ -1,8 +1,8 @@
-Проект "Игра Змейка"
+Project "Game Snake"
 ================
 
-Проект содержит web версию игры змейка в браузере.
+The project contains a web version of the snake game in the browser.
 
-Дополнительные файлы: 
+Additional files:
 ----------------
-> scss.sh - bash скрипт для редактирования scss файлов.
+> scss.sh - bash script for editing scss files.
