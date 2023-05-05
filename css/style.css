@@ -255,7 +255,7 @@ body {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    box-shadow: 2px 2px 2px #00804d;
+    box-shadow: 2px 2px 2px #acacac;
     animation: preloader 0.5s infinite linear; }
   .preloader__gif {
     width: 50px;
